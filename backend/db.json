@@ -1,45 +1,15 @@
 {
   "categories": [
-    {
-      "id": 1,
-      "name": "Components"
-    },
-    {
-      "id": 2,
-      "name": "Modules"
-    },
-    {
-      "id": 3,
-      "name": "Data Binding"
-    },
-    {
-      "id": 4,
-      "name": "Directives"
-    },
-    {
-      "id": 5,
-      "name": "Routing"
-    },
-    {
-      "id": 6,
-      "name": "Services"
-    },
-    {
-      "id": 7,
-      "name": "Dependency Injection"
-    },
-    {
-      "id": 8,
-      "name": "HTTP Requests"
-    },
-    {
-      "id": 9,
-      "name": "Pipes"
-    },
-    {
-      "id": 10,
-      "name": "Performance Optimization"
-    }
+    { "id": 1, "name": "Components" },
+    { "id": 2, "name": "Modules" },
+    { "id": 3, "name": "Data Binding" },
+    { "id": 4, "name": "Directives" },
+    { "id": 5, "name": "Routing" },
+    { "id": 6, "name": "Services" },
+    { "id": 7, "name": "Dependency Injection" },
+    { "id": 8, "name": "HTTP Requests" },
+    { "id": 9, "name": "Pipes" },
+    { "id": 10, "name": "Performance Optimization" }
   ],
   "questions": [
     {
@@ -143,48 +113,415 @@
       "categoryId": 5
     }
   ],
-  "answers": [
-    {
-      "questionId": 1,
-      "answerLabel": "A reusable building block for the user interface",
-      "isCorrect": true
-    },
-    {
-      "questionId": 1,
-      "answerLabel": "A style in Angular",
-      "isCorrect": false
-    },
-    {
-      "questionId": 1,
-      "answerLabel": "A service for handling HTTP requests",
-      "isCorrect": false
-    },
-    {
-      "questionId": 1,
-      "answerLabel": "A routing configuration",
-      "isCorrect": false
-    },
-    {
-      "questionId": 2,
-      "answerLabel": "NgModule is used to declare and configure modules in Angular applications.",
-      "isCorrect": true
-    }
-  ],
+  
+  
+    "answers": [
+      {
+        "questionId": 1,
+        "answerLabel": "A reusable building block for the user interface",
+        "isCorrect": true
+      },
+      {
+        "questionId": 1,
+        "answerLabel": "A style in Angular",
+        "isCorrect": false
+      },
+      {
+        "questionId": 1,
+        "answerLabel": "A service for handling HTTP requests",
+        "isCorrect": false
+      },
+      {
+        "questionId": 1,
+        "answerLabel": "A routing configuration",
+        "isCorrect": false
+      },
+      {
+        "questionId": 2,
+        "answerLabel": "NgModule is used to declare and configure modules in Angular applications.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 2,
+        "answerLabel": "NgModule is used for handling HTTP requests.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 2,
+        "answerLabel": "NgModule manages component lifecycle hooks.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 2,
+        "answerLabel": "NgModule is for managing Angular's styles.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 3,
+        "answerLabel": "You use the Angular CLI command `ng new`.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 3,
+        "answerLabel": "You manually create all component files.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 3,
+        "answerLabel": "You add a new HTML file and link Angular.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 3,
+        "answerLabel": "You download an Angular template from the web.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 4,
+        "answerLabel": "Data binding synchronizes data between component and view, and it includes one-way, two-way, and event binding.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 4,
+        "answerLabel": "Data binding only works for user inputs.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 4,
+        "answerLabel": "Data binding is used for service injection.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 4,
+        "answerLabel": "Data binding allows direct communication between components without services.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 5,
+        "answerLabel": "Interpolation binds a string in the view, while property binding binds data to an element’s property.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 5,
+        "answerLabel": "Interpolation is for two-way data binding, and property binding is for one-way.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 5,
+        "answerLabel": "Both are used for event handling.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 5,
+        "answerLabel": "Interpolation works with services, property binding does not.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 6,
+        "answerLabel": "Event binding binds a function to an event in the template using parentheses, e.g., (click).",
+        "isCorrect": true
+      },
+      {
+        "questionId": 6,
+        "answerLabel": "Event binding synchronizes data between two components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 6,
+        "answerLabel": "Event binding allows data to be injected into services.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 6,
+        "answerLabel": "Event binding is used to bind CSS styles dynamically.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 7,
+        "answerLabel": "Angular CLI is a command-line tool, and you use `ng generate component` to generate components.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 7,
+        "answerLabel": "Angular CLI is used to write styles for Angular components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 7,
+        "answerLabel": "Angular CLI is used for deploying Angular applications to the cloud.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 7,
+        "answerLabel": "Angular CLI is a JavaScript library for making HTTP requests.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 8,
+        "answerLabel": "A directive is a class that adds behavior to elements, such as ngIf and ngFor.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 8,
+        "answerLabel": "A directive is a service used for data binding.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 8,
+        "answerLabel": "A directive is a method for injecting dependencies into components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 8,
+        "answerLabel": "A directive is a lifecycle hook in Angular components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 9,
+        "answerLabel": "The Angular router is used to navigate between views, and routes are configured using the RouterModule.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 9,
+        "answerLabel": "The Angular router is responsible for making HTTP requests.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 9,
+        "answerLabel": "The Angular router is used to manage Angular services.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 9,
+        "answerLabel": "The Angular router allows Angular to manage components' lifecycle.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 10,
+        "answerLabel": "Dependency injection allows Angular to provide components with services they need, improving modularity.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 10,
+        "answerLabel": "Dependency injection is used to bind styles to components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 10,
+        "answerLabel": "Dependency injection is used to manage events.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 10,
+        "answerLabel": "Dependency injection is only for optimizing performance.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 11,
+        "answerLabel": "Input and Output decorators allow communication between parent and child components.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 11,
+        "answerLabel": "Services are used to communicate between parent and child components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 11,
+        "answerLabel": "HTTP requests are necessary for communication between parent and child components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 11,
+        "answerLabel": "Lifecycle hooks enable communication between parent and child components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 12,
+        "answerLabel": "A service is a class that handles business logic and data management in Angular.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 12,
+        "answerLabel": "A service is a directive that manages component interaction.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 12,
+        "answerLabel": "A service is used to manage Angular modules.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 12,
+        "answerLabel": "A service is an HTML element with additional functionality.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 13,
+        "answerLabel": "The ngFor directive is used to repeat a portion of the DOM for each item in a collection.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 13,
+        "answerLabel": "The ngFor directive is used to apply styles dynamically to elements.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 13,
+        "answerLabel": "The ngFor directive binds events to components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 13,
+        "answerLabel": "The ngFor directive is used to inject services into components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 14,
+        "answerLabel": "Modules in Angular organize an application by grouping related code, making it easier to maintain and scale.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 14,
+        "answerLabel": "Modules in Angular are only used for routing.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 14,
+        "answerLabel": "Modules in Angular handle CSS and styling for components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 14,
+        "answerLabel": "Modules in Angular are used to handle event binding.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 15,
+        "answerLabel": "The `ng serve` command is used to build and serve the application, starting a local development server.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 15,
+        "answerLabel": "The `ng serve` command is used to generate a new Angular component.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 15,
+        "answerLabel": "The `ng serve` command is used to handle HTTP requests.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 15,
+        "answerLabel": "The `ng serve` command is used to deploy the Angular application to the cloud.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 16,
+        "answerLabel": "Two-way data binding allows synchronization of data between the component and the view using [(ngModel)].",
+        "isCorrect": true
+      },
+      {
+        "questionId": 16,
+        "answerLabel": "Two-way data binding uses event binding to pass data from parent to child components.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 16,
+        "answerLabel": "Two-way data binding is implemented using property binding only.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 16,
+        "answerLabel": "Two-way data binding requires HTTP requests to synchronize data.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 17,
+        "answerLabel": "trackBy is a function that helps Angular identify and track items in ngFor loops, improving performance.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 17,
+        "answerLabel": "trackBy is used to bind styles to elements in ngFor loops.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 17,
+        "answerLabel": "trackBy is used to make HTTP requests inside ngFor loops.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 17,
+        "answerLabel": "trackBy is used to manage lifecycle hooks for components in ngFor loops.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 18,
+        "answerLabel": "HTTP requests in Angular are handled using the HttpClient module, which provides methods like get() and post().",
+        "isCorrect": true
+      },
+      {
+        "questionId": 18,
+        "answerLabel": "HTTP requests are handled using Angular directives such as ngIf and ngFor.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 18,
+        "answerLabel": "HTTP requests are only possible through Angular services.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 18,
+        "answerLabel": "HTTP requests require creating custom Angular modules.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 19,
+        "answerLabel": "Angular pipes are used to transform data in the template, such as date and currency formatting.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 19,
+        "answerLabel": "Angular pipes are used to manage component lifecycles.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 19,
+        "answerLabel": "Angular pipes are used for making HTTP requests.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 19,
+        "answerLabel": "Angular pipes are used to bind CSS classes to elements.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 20,
+        "answerLabel": "Lazy loading allows Angular to load modules only when needed, improving the application's performance.",
+        "isCorrect": true
+      },
+      {
+        "questionId": 20,
+        "answerLabel": "Lazy loading is used to manage Angular component lifecycle hooks.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 20,
+        "answerLabel": "Lazy loading is used to handle HTTP requests.",
+        "isCorrect": false
+      },
+      {
+        "questionId": 20,
+        "answerLabel": "Lazy loading is used to generate Angular components automatically.",
+        "isCorrect": false
+      }
+    ]
+, 
   "users": [
-    {
-      "id": 1,
-      "username": "admin",
-      "password": "admin"
-    },
-    {
-      "id": 2,
-      "username": "user",
-      "password": "user"
-    },
-    {
-      "id": 3,
-      "username": "test",
-      "password": "test"
-    }
+    { "id": 1, "username": "admin", "password": "admin" },
+    { "id": 2, "username": "user", "password": "user" },
+    { "id": 3, "username": "test", "password": "test" },
+    { "username": "test", "password": "test", "id": 4 }
   ]
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CategoriesService } from 'src/app/shared/services/categories.service';
 
@@ -9,7 +10,7 @@ import { CategoriesService } from 'src/app/shared/services/categories.service';
 })
 export class CategoryMainComponent implements OnInit{
   categories: any[] = [];
-
+  searchName:string = ''
 
   constructor(
     private categoryService: CategoriesService,
@@ -22,5 +23,19 @@ export class CategoryMainComponent implements OnInit{
       this.categories = categories
     })
     
+  }
+
+  navigateToCategoriyQuizz(id:number){
+    this.router.navigate(['/quiz', id])
+  }
+
+  search(form:NgForm){
+    this.categoryService.getBySearch(form.value.searchName).subscribe((categories:any)=>{
+      this.categories = categories
+    })
+  }
+
+  reset(){
+    this.searchName = ''
   }
 }

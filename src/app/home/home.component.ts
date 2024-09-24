@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { AuthService } from "../auth/auth.service";
+import { QuizService } from '../shared/services/quiz.service';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import { AuthService } from "../auth/auth.service";
 export class HomeComponent implements OnInit {
   playerName = '';
 
-  constructor(private router: Router, private authService: AuthService) { }
+  constructor(private router: Router, private authService: AuthService, private quizzService:QuizService) { }
 
   ngOnInit(): void {
     //Nous verrons plus tard comment gérer cela avec des observables
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit {
   }
 
   navigateToQuiz() {
-    this.router.navigate(['/quiz', this.playerName]);
+    this.quizzService.playerName = this.playerName;
+    this.router.navigate(['/categories']);
   }
 }

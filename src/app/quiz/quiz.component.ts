@@ -7,7 +7,7 @@ import { QuizService } from "../shared/services/quiz.service";
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.scss']
 })
-export class QuizComponent implements OnInit {
+export class QuizComponent {
   isQuizFinished = this.quizService.isQuizFinished;
   playerName = '';
 
@@ -17,12 +17,6 @@ export class QuizComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      this.quizService.playerName = params['playerName'];
-      this.playerName = params['playerName'];
-    });
-  }
 
   goToResultPage() {
     this.router.navigate(['/result']);
