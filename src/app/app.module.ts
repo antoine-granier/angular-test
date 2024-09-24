@@ -14,6 +14,8 @@ import { AnswerComponent } from './quiz/answer/answer.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { CategoryCardComponent } from './category-card/category-card.component';
+import { CategoryMainComponent } from './quiz/category-main/category-main.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { RegisterComponent } from './auth/register/register.component';
     QuestionComponent,
     AnswerComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CategoryCardComponent,
+    CategoryMainComponent
   ],
   imports: [
     BrowserModule,

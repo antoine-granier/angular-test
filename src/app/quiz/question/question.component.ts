@@ -9,6 +9,7 @@ import { QuizService } from "../../shared/services/quiz.service";
 export class QuestionComponent implements OnInit {
   quizContent: any[] = this.quizService.quizContent;
 
+
   constructor(private quizService: QuizService) { }
 
   ngOnInit(): void {
